@@ -1,12 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { Link, NavLink } from 'react-router-dom';
+import logo from "../../../assets/pictures/job-icon.png";
 
 const Navber = () => {
     const links=<>
     
-       <li><a>Item 1</a></li>
+       <li><NavLink to='/'>Home</NavLink></li>
        
-        <li><a>Item 3</a></li>
+        <li><NavLink to='/'>Blog</NavLink></li>
     
     </>
     return (
@@ -33,7 +34,10 @@ const Navber = () => {
        {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">
+      <img className='w-12 ' src={logo} alt="" />
+      JOB PORTAL
+      </a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
