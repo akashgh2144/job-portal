@@ -12,8 +12,8 @@ const Navber = () => {
     </>
     return (
         <div className="navbar bg-base-100">
-  <div className="navbar-start">
-    <div className="dropdown">
+      <div className="navbar-start ">
+       <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
