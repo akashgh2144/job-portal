@@ -7,7 +7,7 @@ import ThreeDPhotoCarousel from "./ThreeDPhotoCarousel";
 
 const Home = () => {
     return (
-        <div>
+        <div className="mt-4">
             <Banner></Banner>
             <Hotjobs></Hotjobs>
             <JobCategories></JobCategories>

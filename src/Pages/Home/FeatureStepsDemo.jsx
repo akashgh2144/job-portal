@@ -26,7 +26,7 @@ const features = [
 
 const FeatureSteps = ({
   features,
-  title = "How to Get Started",
+  title = "",
   autoPlayInterval = 3000,
   imageHeight = "h-[400px]",
 }) => {
@@ -116,5 +116,5 @@ const FeatureSteps = ({
 };
 
 export default function FeatureStepsDemo() {
-  return <FeatureSteps features={features} title="Your Journey Starts Here" autoPlayInterval={4000} imageHeight="h-[500px]" />;
+  return <FeatureSteps  features={features} title="Your Journey Starts Here" autoPlayInterval={4000} imageHeight="h-[500px]" />;
 }

@@ -24,7 +24,7 @@ const Carousel = memo(({ handleClick, controls, cards, isCarouselActive }) => {
   const transform = useTransform(rotation, (value) => `rotate3d(0, 1, 0, ${value}deg)`);
 
   return (
-    <div className="flex h-full items-center justify-center bg-gray-800" style={{ perspective: "1000px", transformStyle: "preserve-3d" }}>
+    <div className="flex h-full items-center justify-center bg-gradient-to-l from-[#0d47a1] to-black" style={{ perspective: "1000px", transformStyle: "preserve-3d" }}>
       <motion.div
         drag={isCarouselActive ? "x" : false}
         className="relative flex h-full origin-center cursor-grab justify-center active:cursor-grabbing"
@@ -42,7 +42,7 @@ const Carousel = memo(({ handleClick, controls, cards, isCarouselActive }) => {
         {cards.map((imgUrl, i) => (
           <motion.div
             key={`key-${imgUrl}-${i}`}
-            className="absolute flex h-full origin-center items-center justify-center rounded-xl bg-gray-700 p-2"
+            className="absolute flex h-full origin-center items-center justify-center rounded-xl  p-2"
             style={{ width: `${faceWidth}px`, transform: `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)` }}
             onClick={() => handleClick(imgUrl)}
           >
