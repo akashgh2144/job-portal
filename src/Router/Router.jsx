@@ -8,6 +8,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import JobDetails from "../Pages/Home/JobDetails/JobDetails";
 import jobs from "../../public/Job.json"
+import Blog from "../Pages/Blog/Blog";
 
   const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ import jobs from "../../public/Job.json"
         {
           path: '/',
           element : <Home></Home>
+        },
+        {
+          path:'/Blog',
+          element:<Blog></Blog>
         },
         {
           path:'/jobs/:id',
