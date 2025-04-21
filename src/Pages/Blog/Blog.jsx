@@ -153,19 +153,19 @@ const Blog = () => {
         {/* ✅ Subscribe Section - Moved Below the Blog */}
         <div className="bg-blue-600 text-white p-10 rounded-2xl relative flex flex-col items-center text-center mt-10">
           {/* Floating Images */}
-          <div className="absolute left-4 top-6 w-16 h-16 rounded-lg overflow-hidden">
+          <div className="absolute left-4 top-6 w-32 h-16 rounded-lg overflow-hidden">
             <img src={images[0]} alt="People" />
           </div>
-          <div className="absolute left-8 top-1/2 w-16 h-16 rounded-lg overflow-hidden">
+          <div className="absolute left-8 top-1/2 w-32 h-16 rounded-lg overflow-hidden">
             <img src={images[1]} alt="Meeting" />
           </div>
-          <div className="absolute left-6 bottom-6 w-16 h-16 rounded-lg overflow-hidden">
+          {/* <div className="absolute left-6 bottom-6 w-20 h-16 rounded-lg overflow-hidden">
             <img src={images[2]} alt="Office" />
-          </div>
-          <div className="absolute right-4 top-6 w-16 h-16 rounded-lg overflow-hidden">
+          </div> */}
+          <div className="absolute right-4 top-6 w-32 h-20 rounded-lg overflow-hidden">
             <img src={images[3]} alt="Business Discussion" />
           </div>
-          <div className="absolute right-6 bottom-6 w-16 h-16 rounded-lg overflow-hidden">
+          <div className="absolute right-6 bottom-6 w-32 h-16 rounded-lg overflow-hidden">
             <img src={images[4]} alt="Teamwork" />
           </div>
   
